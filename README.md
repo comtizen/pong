@@ -1,27 +1,29 @@
-# Pong
+# Pingos
 
 A TCP/UDP port ping client that allows you to test connectivity to specific ports without using ICMP protocol.
+
+**Pingos** is named by adding the Greek-style suffix 'os' to 'ping', inspired by the naming conventions of ancient Greek words and modern open-source projects.
 
 ## Installation
 
 ```bash
-pip install pong
+pip install pingos
 ```
 
 ## Usage
 
 ```bash
 # TCP port ping
-pong tcp example.com 80
+pingos tcp example.com 80
 
 # UDP port ping
-pong udp example.com 53
+pingos udp example.com 53
 
 # With custom timeout (in seconds)
-pong tcp example.com 80 --timeout 2
+pingos tcp example.com 80 --timeout 2
 
 # With custom number of packets
-pong tcp example.com 80 --count 5
+pingos tcp example.com 80 --count 5
 ```
 
 ## Features

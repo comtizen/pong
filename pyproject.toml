@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "pong"
+name = "pingos"
 version = "0.1.0"
 description = "A TCP/UDP port ping client"
-authors = ["Your Name <your.email@example.com>"]
+authors = ["andrew.chang <ultrasparc@naver.com>"]
 readme = "README.md"
-packages = [{include = "pong"}]
+packages = [{include = "pingos"}]
 
 [tool.poetry.dependencies]
 python = "^3.8"
@@ -12,7 +12,7 @@ click = "7.1.2"
 rich = "^13.7.0"
 
 [tool.poetry.scripts]
-pong = "pong.cli:main"
+pingos = "pingos.cli:main"
 
 [build-system]
 requires = ["poetry-core"]

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pingos"
-version = "0.1.1"
+version = "0.1.2"
 description = "A TCP/UDP port ping client"
 authors = ["andrew.chang <ultrasparc@naver.com>"]
 readme = "README.md"

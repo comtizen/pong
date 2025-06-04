@@ -1,5 +1,5 @@
 import click
-from .ping import PortPing
+from .pingos import PortPing
 
 @click.command()
 @click.argument('protocol', type=click.Choice(['tcp', 'udp']))

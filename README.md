@@ -37,3 +37,16 @@ pingos tcp example.com 80 --count 5
 ## Requirements
 
 - Python 3.8 or higher 
+
+## PyPI 배포 방법
+
+```bash
+# 빌드
+poetry build
+
+# PyPI 업로드 (토큰은 환경 변수로 관리)
+export PYPI_TOKEN="your-token-here"
+python3 -m twine upload -u __token__ -p $PYPI_TOKEN dist/*
+```
+
+> ⚠️ 보안 주의: PyPI 토큰은 절대로 Git 저장소에 커밋하지 마세요! 

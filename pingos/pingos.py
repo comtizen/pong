@@ -110,7 +110,7 @@ class PortPing:
                     )
                 else:
                     self.console.print(
-                        f"Request timeout for icmp_seq {packet_num}"
+                        f"Request timeout for {protocol.upper()}_seq {packet_num}"
                     )
                 
                 packet_num += 1
